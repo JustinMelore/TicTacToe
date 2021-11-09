@@ -1,0 +1,188 @@
+/* :root {
+
+} */
+
+@font-face {
+  font-family: Mochiy Pop;
+  src: url(MochiyPopPOne-Regular.ttf);
+}
+
+html {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10vh;
+  background-image: url("mainBackground.svg");
+  background-size: cover;
+}
+
+#popup {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  z-index: 1;
+  font-size: 2.5vw;
+  opacity: 0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+  border: 1vw solid gainsboro;
+  border-radius: 5vw;
+  text-align: center;
+  padding-top: 3vh;
+  color: darkorange;
+}
+
+#popupHeading {
+  margin: 0;
+}
+
+#popup > img {
+  width: 10vw;
+  margin: 0;
+}
+
+#popup div {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 10vh;
+}
+
+#popup p {
+  font-size: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#popup button {
+  width: 3vw;
+  height: 3vw;
+  border: none;
+  border-radius: 5vw;
+  padding: 0.25vw 0.5vw 0.25vw 0.5vw;
+  box-shadow: 0 0 10px 5px inset darkgray;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#popup button:hover {
+  background-color: red;
+  box-shadow: 0 0 10px 5px inset darkred;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#popup button img {
+  width: 100%;
+}
+
+#title {
+  transform: skewX(-20deg);
+  font-family: Mochiy Pop;
+  font-size: 7vw;
+  color: darkorange;
+  text-shadow: 0.5vw 1vh 0 black;
+}
+
+#currentPlayer {
+  font-family: Mochiy Pop;
+  font-size: 3vw;
+}
+
+#mainBox {
+  box-sizing: border-box;
+  height: 80vh;
+  width: 40vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: [col1] auto [col2] auto [col3] auto [end];
+  grid-template-rows: [row1] auto [row2] auto [row3] [auto] [end];
+  grid-template-areas: auto;
+}
+
+#mainBox div {
+  border: 1vh solid black;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  padding: 0;
+  transition: background-color 1s;
+  font-size: 10vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+}
+
+#mainBox div p {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+#mainBox div:hover {
+  background-color: lightseagreen !important;
+  transition: background-color 1s !important;
+}
+
+#mainBox .row1 {
+  border-top: none;
+}
+
+#mainBox .row3 {
+  border-bottom: none;
+}
+
+#mainBox .col1 {
+  border-left: none;
+}
+
+#mainBox .col3 {
+  border-right: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #00002d;
+  color: paleturquoise;
+}
+
+footer a {
+  color: paleturquoise;
+  transition: color 0.5s;
+}
+
+footer a:hover {
+  color: lightgreen;
+  transition: color 0.5s;
+}

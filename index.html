@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Justin Melore">
+    <meta name="description" content="Welcome to Tic Tac Toe! A classic game, made digital!">
+
+    <meta property="og:title" content="Tic Tac Toe">
+    <meta property="og:description" content="Welcome to Tic Tac Toe! A classic game, made digital!">
+
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="tic-tac-toe.png">
+</head>
+
+<body>
+    <div id="popup">
+        <img src="crown.png">
+        <h1 id="popupHeading"></h1>
+        <div>
+            <p id="p1Wins"></p>
+            <p id="p2Wins"></p>  
+        </div>
+
+        <button onmousedown="resetGame()"><img src="reset.png"></button>
+    </div>
+    
+    <main id="main">
+        <h1 id="title">TIC TAC TOE</h1>
+        <h1 id="currentPlayer"></h1>
+        <div id="mainBox">
+            <div class="row1 col1" id="box1" onmousedown="playerTurn(1)"><p id="1"></p></div>
+            <div class="row1 col2" id="box2" onmousedown="playerTurn(2)"><p id="2"></p></div>
+            <div class="row1 col3" id="box3" onmousedown="playerTurn(3)"><p id="3"></p></div>
+            <div class="row2 col1" id="box4" onmousedown="playerTurn(4)"><p id="4"></p></div>
+            <div class="row2 col2" id="box5" onmousedown="playerTurn(5)"><p id="5"></p></div>
+            <div class="row2 col3" id="box6" onmousedown="playerTurn(6)"><p id="6"></p></div>
+            <div class="row3 col1" id="box7" onmousedown="playerTurn(7)"><p id="7"></p></div>
+            <div class="row3 col2" id="box8" onmousedown="playerTurn(8)"><p id="8"></p></div>
+            <div class="row3 col3" id="box9" onmousedown="playerTurn(9)"><p id="9"></p></div>
+        </div>         
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>Tic Tac Toe Icons provided by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
+        <p>Backgrounds provided by <a href="https://www.svgbackgrounds.com/" target="_blank">SVG Backgrounds</a> from <a href="https://www.svgbackgrounds.com/" target="_blank">svgbackgrounds.com</a></p>
+    </footer>
+</body>
+
+
+
+
+
+</html>
